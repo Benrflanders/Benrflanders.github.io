@@ -6,7 +6,6 @@ import About from "components/About";
 import Blog from "components/Blog";
 import Contact from "components/Contact";
 import Portfolio from "components/Portfolio";
-import Skills from "components/Skills";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,11 +20,12 @@ export default function Home() {
       </Head>
       <main className="max-w-screen w-screen bg-base-300">
         <Hero />
-        <About />
+        <div className="flex flex-col w-full border-opacity-50 py-8">
+          <div className="divider prose-xl">
+            A seasoned machine learning engineer
+          </div>
+        </div>
         <Portfolio />
-        <Skills />
-        <Blog />
-        <Contact />
       </main>
       <Footer />
     </>

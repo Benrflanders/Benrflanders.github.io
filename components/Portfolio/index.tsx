@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Portfolio() {
   // A showcase of their previous projects, including web development projects and machine learning projects. Each project should have a brief description, technology stack used, and a screenshot or demo link.
@@ -9,15 +10,22 @@ export default function Portfolio() {
   return (
     <div>
       <p></p>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 w-full content-center justify-center bg-slate-200 py-4 px-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 w-full content-center justify-center bg-slate-200 py-4">
         <div className="card max-w-lg bg-base-100 shadow-xl justify-center justify-self-center">
-          <figure>
-            <Image src="/artimatic.png" alt="Artimatic Logo" fill={true} />
-          </figure>
           <div className="card-body">
-            <h2 className="card-title">
-              Founder of Artimatic Technologies, Inc.
-            </h2>
+            <div className="flex flex-row">
+              <h2 className="card-title flex flex-3">
+                Co-Founder of Artimatic Technologies, Inc.
+              </h2>
+              <figure className="flex flex-2">
+                <Image
+                  src="/artimatic.png"
+                  alt="Artimatic Logo"
+                  height={165 / 2}
+                  width={512 / 2}
+                />
+              </figure>
+            </div>
             <p>Ben helped co-found Artimatic Technologies, Inc.</p>
             <p>
               He has worked on every piece of the Artimatic stack and pieced it
@@ -25,10 +33,10 @@ export default function Portfolio() {
             </p>
             <div className="mockup-code">
               <pre>
-                <code>Tensorflow and Keras</code>
+                <code>Tensorflow && Keras</code>
               </pre>
               <pre>
-                <code>Django Rest Framework</code>
+                <code>Django REST Framework</code>
               </pre>
               <pre>
                 <code>React</code>
@@ -37,15 +45,20 @@ export default function Portfolio() {
                 <code>AWS</code>
               </pre>
             </div>
+
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Check out Artimatic</button>
+              <a
+                href="https://www.artimatic.io/"
+                className="btn btn-primary"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Check out Artimatic
+              </a>
             </div>
           </div>
         </div>
         <div className="card max-w-lg bg-base-100 shadow-xl justify-center justify-self-center">
-          <figure>
-            <Image src="/wayfinder.png" alt="Wayfinder Logo" fill={true} />
-          </figure>
           <div className="card-body">
             <h2 className="card-title">Freelance Developer</h2>
             <p>
@@ -65,18 +78,20 @@ export default function Portfolio() {
               </pre>
             </div>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Check out Wayfinder</button>
+              <div className="card-actions justify-end">
+                <a
+                  href="http://wayfinderdata.com/"
+                  className="btn btn-primary"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Check out Wayfinder
+                </a>
+              </div>
             </div>
           </div>
         </div>
         <div className="card max-w-lg bg-base-100 shadow-xl justify-center justify-self-center">
-          <figure>
-            <Image
-              src="/thesis_logo.png"
-              alt="Thesis Image Placholder"
-              fill={true}
-            />
-          </figure>
           <div className="card-body">
             <h2 className="card-title">Masters of Artificial Intelligence</h2>
             <p>
@@ -100,7 +115,46 @@ export default function Portfolio() {
               </pre>
             </div>
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Read {"Ben's"} Thesis</button>
+              <a
+                href="https://www.ai.uga.edu/sites/default/files/inline-files/theses/flanders_benjamin_202105_ms.pdf"
+                className="btn btn-primary"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Read {"Ben's"} Thesis
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="card max-w-lg bg-base-100 shadow-xl justify-center justify-self-center">
+          <div className="card-body">
+            <h2 className="card-title">NPS Database Technician</h2>
+            <p>
+              While pursuing his Masters of Artificial Intelligence, Ben worked
+              with the US National Parks System to create datbase applications
+              for the Wildlife and Water Quality SECN teams.
+            </p>
+            <p>
+              Ben designed database schemas and implemented, then developed
+              applications for scientists to interface with these databases.
+            </p>
+            <div className="mockup-code">
+              <pre>
+                <code>Transact-SQL</code>
+              </pre>
+              <pre>
+                <code>Visual Basic</code>
+              </pre>
+            </div>
+            <div className="card-actions justify-end">
+              <a
+                href="https://www.nps.gov/articles/secn-august19-newsletter.htm"
+                className="btn btn-primary"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                South East Coast Network NPS
+              </a>
             </div>
           </div>
         </div>
