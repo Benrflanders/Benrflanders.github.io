@@ -22,7 +22,8 @@ export default function Home() {
         <Hero />
         <div className="flex flex-col w-full border-opacity-50 py-8">
           <div className="divider prose-xl">
-            A seasoned machine learning engineer
+            Empowering Your Digital Vision with Expert Web Development and
+            Machine Learning
           </div>
         </div>
         <Portfolio />
