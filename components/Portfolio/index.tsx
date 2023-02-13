@@ -8,8 +8,7 @@ export default function Portfolio() {
   // actually coded... maybe tell a story?
 
   return (
-    <div>
-      <p></p>
+    <div id="portfolio">
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 w-full content-center justify-center bg-slate-200 py-4">
         <div className="card max-w-lg bg-base-100 shadow-xl justify-center justify-self-center">
           <div className="card-body">
