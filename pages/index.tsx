@@ -33,8 +33,7 @@ export default function Home() {
         <Portfolio />
         <div className="flex flex-col w-full border-opacity-50 py-8">
           <div className="divider prose-xl">
-            Empowering Your Digital Vision with Expert Web Development and
-            Machine Learning
+            “The best way to predict the future is to invent it.” - Alan Kay
           </div>
         </div>
         <About />
