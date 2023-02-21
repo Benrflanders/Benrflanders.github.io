@@ -7,10 +7,11 @@ export default function About() {
         <div>
           <h4 className="text-lg prose-lg">
             Ben Flanders is a software engineer based out of Atlanta with a
-            passion for artificial intelligence and ... He is currently wearing
-            many hats at his startup Artimatic Technologies, Inc., an animation
-            technology startup, and was previously a software developer for the
-            US National Parks System south east coast network in Athens, GA.{" "}
+            passion for artificial intelligence and building scalable
+            businesses. He is currently wearing many hats at his startup
+            Artimatic Technologies, Inc., an animation technology startup, and
+            was previously a software developer for the US National Parks System
+            south east coast network in Athens, GA.{" "}
           </h4>
           <br />
           <h4 className="text-md prose-md">
@@ -31,9 +32,15 @@ export default function About() {
             masters degree with one of his professors and two other students. He
             hopes to continue working with other{" "}
           </h4>
+          <p>
+            While pursuing his Masters of Artificial Intelligence, Ben worked
+            with the US National Parks System to create datbase applications for
+            the Wildlife and Water Quality SECN teams.
+          </p>
           <br />
           <h4 className="text-md prose-md">
-            Ben is an expert in Python, Javascript, SQL, and (some) AWS Services
+            Ben is an expert in Python, Javascript, SQL, and multiple AWS
+            Services
           </h4>
           <br />
           <h4 className="text-md prose-md">
