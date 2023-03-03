@@ -1,10 +1,26 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
-import { useRouter } from 'next/router';
 import Script from "next/script";
 import * as gtag from "../lib/gtag";
+import {useEffect} from 'react';
+import TagManager from 'react-gtm-module';
+
+const GA_TRACKING_ID = gtag.GA_TRACKING_ID!;
 
 export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    try {
+      TagManager.initialize({ gtmId: process.env.NEXT_PUBLIC_GTM_ID!});
+    } catch (error) {
+      console.error("Environment variable NEXT_PUBLIC_GTM_ID is not defined.")
+    }
+    if(typeof(GA_TRACKING_ID) == "string"){
+      console.log("Google analytics ID: ", GA_TRACKING_ID )
+    }else{
+      throw TypeError("GA Tracking ID environment variable not loaded.")
+    }
+  }, [])
+
   return <>
     <Script
       id="load-gtag-js"
