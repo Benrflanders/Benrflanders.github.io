@@ -7,9 +7,11 @@ import * as gtag from "../lib/gtag";
 export default function App({ Component, pageProps }: AppProps) {
   return <>
     <Script
+      id="load-gtag-js"
       strategy='afterInteractive'
       src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`} />
     <Script
+      id="push-gtag-to-datalayer"
       strategy='afterInteractive'
       dangerouslySetInnerHTML={{
         __html: `
