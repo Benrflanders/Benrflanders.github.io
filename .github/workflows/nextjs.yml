@@ -52,6 +52,8 @@ jobs:
         with:
           node-version: "16.19.0"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+      - name: next-env
+        uses: natterstefan/action-next-env@v1.2.0
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
