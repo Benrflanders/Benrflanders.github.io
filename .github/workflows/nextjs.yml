@@ -92,8 +92,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: next-env
-        uses: natterstefan/action-next-env@v1.2.0
+      - name: 'Create env file'
+        run: | 
+          echo "${{ vars.NEXT_PUBLIC_GA_ID }}\n ${{ vars.NEXT_PUBLIC_GTM_ID }}" >> .env
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
