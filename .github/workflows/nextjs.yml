@@ -94,7 +94,7 @@ jobs:
     steps:
       - name: 'Create env file'
         run: | 
-          echo "${{ vars.NEXT_PUBLIC_GA_ID }}\n ${{ vars.NEXT_PUBLIC_GTM_ID }}" >> .env
+          echo -en "NEXT_PUBLIC_GA_ID=G-GLJBCSVJV2\nNEXT_PUBLIC_GTM_ID=GTM-5HZSW2M" >> .env
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
