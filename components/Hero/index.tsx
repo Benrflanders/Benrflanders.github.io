@@ -11,7 +11,7 @@ export default function Hero({ learnMoreHref, aboutHref }: HeroProps) {
   // A full-screen header with a hero image showcasing the developer's skills, highlighting their expertise in web development, machine learning, and being a CTO. A call-to-action to view their portfolio or learn more about them.
 
   return (
-    <div className="relative flex flex-col bg-base-200 h-screen max-w-screen max-h-screen">
+    <div className="relative flex flex-col h-screen max-w-screen max-h-screen">
       <div className="relative h-screen w-screen bg-base-300 max-w-screen max-h-screen">
         <div className="w-full h-full items-start max-h-screen max-w-full">
           <Image

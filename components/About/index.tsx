@@ -2,8 +2,12 @@ export default function About() {
   // A section that provides a brief overview of Ben's experience, education, and skills, including their work experience as a web developer, machine learning engineer, and COO.
 
   return (
-    <div className="grid rounded-b-full min-h-screen" id="about">
-      <div className="bg-neutral-400  shadow-2xl flex justify-start px-4 py-4 md:px-12 text-neutral-800">
+    <div
+      className="grid grid-cols-1 lg:grid-cols-4 rounded-br-full min-h-screen bg-neutral-200 place-content-center"
+      id="about"
+    >
+      <div></div>
+      <div className="lg:col-span-2 shadow-2xl h-fit flex justify-start px-4 py-4 md:px-12 text-secondary-content bg-neutral-100">
         <div>
           <h4 className="text-lg prose-lg">
             Ben Flanders is a software engineer based out of Atlanta with a

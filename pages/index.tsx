@@ -37,6 +37,13 @@ export default function Home() {
           </div>
         </div>
         <About />
+        <div className="flex flex-col w-full border-opacity-50 py-8">
+          <div className="divider prose-xl">
+            Ben actively tweets about machine learning and other areas that
+            might interest you.
+          </div>
+        </div>
+        <Blog />
       </main>
       <Footer />
     </>
