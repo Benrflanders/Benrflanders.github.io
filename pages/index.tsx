@@ -33,14 +33,16 @@ export default function Home() {
         <Portfolio />
         <div className="flex flex-col w-full border-opacity-50 py-8">
           <div className="divider prose-xl">
-            “The best way to predict the future is to invent it.” - Alan Kay
+            “The best way to predict the future is to invent it.” -Alan Kay
           </div>
         </div>
         <About />
         <div className="flex flex-col w-full border-opacity-50 py-8">
           <div className="divider prose-xl">
-            Ben actively tweets about machine learning and other areas that
-            might interest you.
+            {
+              '"If I have seen further, it is by standing on the shoulders of giants"'
+            }{" "}
+            -Sir Isaac Newton
           </div>
         </div>
         <Blog />

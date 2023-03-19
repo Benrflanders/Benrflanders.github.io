@@ -6,23 +6,24 @@ export default function Blog() {
 
   return (
     <div>
-      <h1 className="text-seondary-content text-4xl mx-4">{"Ben's Blog"}</h1>
       <BlogSection sectionName={"Papers"}>
         <BlogEntry
           title={"UGA Thesis"}
           content={
-            "Ben authored a thesis on automated bird collection audio data in a collaboration between the US National Parks System and the University of Georgia School of Artficial Intelligence."
+            "With support from the US National Parks System and the University of Georgia School of Artificial Intelligence, Ben authored a thesis on automated bird collection audio data."
           }
           url={
             "https://www.ai.uga.edu/sites/default/files/inline-files/theses/flanders_benjamin_202105_ms.pdf"
           }
-          buttonName={"Thesis"}
+          buttonName={"Read the Thesis"}
         />
         <BlogEntry
           title={"SkiNNer Paper"}
-          content={""}
+          content={
+            "A paper describing Artimatic's flasghip product, skiNNer. Original publication was 2021, but the paper is not yet on the publishers site. Check back soon!"
+          }
           url={null}
-          buttonName={"Check back soon"}
+          buttonName={""}
         />
       </BlogSection>
       <BlogSection sectionName={"Articles"}>
@@ -37,8 +38,15 @@ export default function Blog() {
           buttonName={"View the blog post"}
         />
       </BlogSection>
-      <BlogSection sectionName={"Thoughts"}>
-        <div>More coming soon...</div>
+      <BlogSection sectionName={"Other Thoughts"}>
+        <BlogEntry
+          title={"Twitter"}
+          content={
+            "Follow Ben on Twitter to stay up-to-date on ML news and Ben's professional journey."
+          }
+          url={"https://twitter.com/Benflanders200"}
+          buttonName={"Follow Ben on Twitter"}
+        />
       </BlogSection>
     </div>
   );
