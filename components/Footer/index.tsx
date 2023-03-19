@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   // A section that includes social media links, contact information, and a copyright notice.
   return (
-    <footer className="footer grid grid-cols-2 w-full content-between text-accent-content  bg-neutral-200">
+    <footer className="footer grid grid-cols-2 w-full content-between text-accent-content  bg-neutral-200 min-h-96">
       <div className="flex pl-8 p-4 bg-neutral-200 place-content-start">
         <p>All Rights Reserved by Benjamin Flanders, 2023</p>
       </div>

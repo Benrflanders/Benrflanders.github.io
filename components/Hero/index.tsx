@@ -4,13 +4,14 @@ import heroImage from "../../public/hero_banner.png";
 
 type HeroProps = {
   learnMoreHref: string;
+  aboutHref: string;
 };
 
-export default function Hero({ learnMoreHref }: HeroProps) {
+export default function Hero({ learnMoreHref, aboutHref }: HeroProps) {
   // A full-screen header with a hero image showcasing the developer's skills, highlighting their expertise in web development, machine learning, and being a CTO. A call-to-action to view their portfolio or learn more about them.
 
   return (
-    <div className="relative flex flex-col bg-base-200 h-screen max-w-screen max-h-screen">
+    <div className="relative flex flex-col h-screen max-w-screen max-h-screen">
       <div className="relative h-screen w-screen bg-base-300 max-w-screen max-h-screen">
         <div className="w-full h-full items-start max-h-screen max-w-full">
           <Image
@@ -32,10 +33,17 @@ export default function Hero({ learnMoreHref }: HeroProps) {
               </h3>
               <h3 className="text-primary-content">Benrflanders@gmail.com</h3>
             </div>
-            <div className="flex flex-1 flex-col items-center justify-center pl-0 md:pl-64 sm:pt-16 p-0 sm:p-16 pb-4 scroll-smooth">
+            <div className="flex flex-1 flex-col items-center justify-center space-y-4 pl-0 md:pl-64 sm:pt-16 p-0 sm:p-16 pb-4 scroll-smooth">
               <Link
                 href={learnMoreHref}
-                className="btn-circle btn-primary w-full max-w-xs md:max-w-md flex flex-col items-center justify-center"
+                className="btn btn-circle btn-primary w-full max-w-xs md:max-w-md flex flex-col items-center justify-center"
+                scroll={false}
+              >
+                Things Ben has built
+              </Link>
+              <Link
+                href={aboutHref}
+                className="btn btn-circle btn-primary w-full max-w-xs md:max-w-md flex flex-col items-center justify-center"
                 scroll={false}
               >
                 Learn More About Ben
