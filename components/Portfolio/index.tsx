@@ -85,10 +85,10 @@ export default function Portfolio() {
             <p>
               Ben leveraged his expertise in RESTful API design and database
               development to create a highly scalable and reliable
-              infrastructure. Thanks to his contributions, Artimatic's products
-              are known for their seamless integration and ease of use. In
-              addition, Ben has continued to improve the API to ensure that it
-              meets the evolving needs of Artimatic customers.
+              infrastructure. Thanks to his contributions, {"Artimatic's"}{" "}
+              products are known for their seamless integration and ease of use.
+              In addition, Ben has continued to improve the API to ensure that
+              it meets the evolving needs of Artimatic customers.
             </p>
             <div className="mockup-code">
               <pre>
