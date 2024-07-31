@@ -8,6 +8,16 @@ export default function Blog() {
     <div>
       <BlogSection sectionName={"Papers & Patents"}>
         <BlogEntry
+          title={
+            "Patent: Automated weighting generation for three-dimensional models"
+          }
+          content={
+            "Developed and patented a novel process that creates and adjusts model weightings matrices, applies a machine learning model, and generates an accurate output weighting."
+          }
+          url={"https://patents.justia.com/inventor/benjamin-robert-flanders"}
+          buttonName={"View the Patent"}
+        />
+        <BlogEntry
           title={"UGA Thesis"}
           content={
             "With support from the US National Parks System and the University of Georgia School of Artificial Intelligence, Ben authored a thesis on automated bird collection audio data."
