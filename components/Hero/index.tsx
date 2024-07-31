@@ -16,7 +16,7 @@ export default function Hero({ learnMoreHref, aboutHref }: HeroProps) {
       <div className="relative h-screen w-screen bg-base-300 max-w-screen max-h-screen">
         <div className="w-full h-full items-start max-h-screen max-w-full">
           <Image
-            alt="Digital art portrait of Ben"
+            alt="Abstract background art. Colors are primarily blue, dark gray, and white."
             src={heroImage}
             fill={true}
             className="rounded-br-2xl object-cover object-center"
