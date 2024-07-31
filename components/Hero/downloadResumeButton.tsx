@@ -4,7 +4,7 @@ import { FaFileDownload } from "react-icons/fa";
 export default function DownloadResumeButton() {
   return (
     <button
-      className="h-14 btn btn-square btn-secondary w-3/5 max-w-xs md:max-w-sm flex flex-col items-center justify-center"
+      className="h-14 btn btn-square btn-secondary w-4/5 max-w-xs md:max-w-sm flex flex-col items-center justify-center"
       onClick={() => {
         window.open("/Ben_Flanders_Resume.pdf", "_blank");
       }}
