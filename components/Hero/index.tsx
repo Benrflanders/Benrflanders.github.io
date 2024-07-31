@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import heroImage from "../../public/hero_banner.png";
+import DownloadResumeButton from "./downloadResumeButton";
 
 type HeroProps = {
   learnMoreHref: string;
@@ -48,6 +49,7 @@ export default function Hero({ learnMoreHref, aboutHref }: HeroProps) {
               >
                 Learn More About Ben
               </Link>
+              <DownloadResumeButton />
             </div>
           </div>
         </div>
