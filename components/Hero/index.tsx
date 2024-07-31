@@ -18,7 +18,7 @@ export default function Hero({ learnMoreHref, aboutHref }: HeroProps) {
             alt="Digital art portrait of Ben"
             src={heroImage}
             fill={true}
-            className="rounded-br-2xl object-cover object-right"
+            className="rounded-br-2xl object-cover object-center"
           />
         </div>
       </div>
