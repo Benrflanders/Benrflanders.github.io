@@ -7,7 +7,7 @@ export default function About() {
       id="about"
     >
       <div></div>
-      <div className="lg:col-span-2 shadow-2xl h-fit flex justify-start px-4 py-4 md:px-12 text-secondary-content bg-neutral-100  rounded-md">
+      <div className="opacity-90 lg:col-span-2 shadow-2xl h-fit flex justify-start px-4 py-4 md:px-12 text-secondary-content bg-neutral-100  rounded-md">
         <div>
           <br />
           <h4 className="text-2xl prose-2xl">
@@ -52,17 +52,9 @@ export default function About() {
             Services
           </h4>
           <br />
-          <h4 className="text-md prose-md">
-            Ben is proficient in Javascript, but he will probably talk you into
-            using Typescript instead.
-          </h4>
-          <br />
           <h4>
             Outside of work, Ben loves to cheer on the Dawgs and explore the
-            world with his dogs. Recently, Ben has also made a hobby out of
-            creating art with Artifical intelligence and other digital tools.
-            Thank you StabilityAI! All of the images on this site were
-            (partially) created with the help of AI.
+            world with his dogs.
           </h4>
         </div>
       </div>

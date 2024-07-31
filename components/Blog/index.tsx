@@ -6,7 +6,7 @@ export default function Blog() {
 
   return (
     <div>
-      <BlogSection sectionName={"Papers"}>
+      <BlogSection sectionName={"Papers & Patents"}>
         <BlogEntry
           title={"UGA Thesis"}
           content={
