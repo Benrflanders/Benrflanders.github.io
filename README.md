@@ -13,7 +13,7 @@ When upgrading Next.js, follow the **App Router** guides (this repo uses `app/`)
 
 ## Getting Started
 
-Install dependencies and run the development server:
+Use **Node.js 24** (same major version as CI). Install dependencies and run the development server:
 
 ```bash
 npm install

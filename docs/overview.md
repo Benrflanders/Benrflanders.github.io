@@ -27,7 +27,7 @@
 | Icons | `react-icons` |
 | Analytics | Google Tag Manager / GA (env vars: `NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_GTM_ID`) |
 | Linting | ESLint (`next/core-web-vitals`) |
-| CI/CD | GitHub Actions (`.github/workflows/nextjs.yml`) — Node 20.11, builds and deploys to GitHub Pages |
+| CI/CD | GitHub Actions (`.github/workflows/nextjs.yml`) — Node 24, builds and deploys to GitHub Pages |
 
 ---
 

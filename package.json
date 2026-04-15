@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.9",
-    "@types/node": "20.11.0",
+    "@types/node": "^24.12.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.4",
@@ -24,7 +24,7 @@
     "typescript": "^5.4.4"
   },
   "engines": {
-    "node": "20.11.0"
+    "node": ">=24.0.0"
   },
   "author": {
     "email": "Benrflanders@gmail.com",
