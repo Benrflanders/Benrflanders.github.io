@@ -2,7 +2,9 @@
 
 Personal portfolio website for **Ben Flanders** — hosted at **[benflanders.me](https://benflanders.me)**.
 
-Built with [Next.js](https://nextjs.org/) 14 (App Router, static export), [Tailwind CSS](https://tailwindcss.com/), and [`@tailwindcss/typography`](https://tailwindcss.com/docs/typography-plugin). Deployed to GitHub Pages.
+Built with [Next.js](https://nextjs.org/) 16 (App Router, static export), [Tailwind CSS](https://tailwindcss.com/), and [`@tailwindcss/typography`](https://tailwindcss.com/docs/typography-plugin). Deployed to GitHub Pages.
+
+When upgrading Next.js, follow the **App Router** guides (this repo uses `app/`), not the Pages Router docs: [Next.js upgrade guides (App Router)](https://nextjs.org/docs/app/guides/upgrading).
 
 ## Documentation
 

@@ -1,6 +1,8 @@
+import type { ReactNode } from "react";
+
 type BlogSectionProps = {
   sectionName: string;
-  children: JSX.Element[] | JSX.Element;
+  children: ReactNode;
 };
 
 export default function BlogSection({
