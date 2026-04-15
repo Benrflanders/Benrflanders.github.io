@@ -1,17 +1,25 @@
 import React from "react";
-import { Inter } from "next/font/google";
+import { Inter, Outfit } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-inter",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-outfit",
 });
 
 import "./globals.css";
+import SkipLink from "components/SkipLink";
 
 export const metadata = {
-  title: "Homepage of Ben Flanders",
+  title: "Ben Flanders — ML, Agents & Web",
   description:
-    "The homepage of Ben Flanders. A software engineer and machine learning expert.",
+    "Software engineer in Atlanta focused on machine learning, production AI agents, and low-latency conversational systems.",
 };
 
 export default function RootLayout({
@@ -20,8 +28,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className} data-theme="business">
-      <body>{children}</body>
+    <html
+      lang="en"
+      className={`${inter.variable} ${outfit.variable} scroll-smooth`}
+    >
+      <body className="min-h-screen bg-slate-950 font-sans text-slate-300 antialiased">
+        <SkipLink />
+        {children}
+      </body>
     </html>
   );
 }

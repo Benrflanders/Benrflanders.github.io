@@ -7,11 +7,12 @@ export default function BlogSection({
   sectionName,
   children,
 }: BlogSectionProps) {
-  // navigation and clear separatation of different categories of posts
   return (
-    <div className="my-4 mx-8  p-4">
-      <h1 className="text-4xl">{sectionName}</h1>
-      <div className="grid grid-cols-1 lg:grid-cols-2"> {children}</div>
+    <div className="mb-16 px-4 sm:px-6 lg:px-8">
+      <h2 className="font-display text-2xl font-semibold tracking-tight text-slate-100 sm:text-3xl">
+        {sectionName}
+      </h2>
+      <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-2">{children}</div>
     </div>
   );
 }

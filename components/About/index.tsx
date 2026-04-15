@@ -1,63 +1,107 @@
 export default function About() {
-  // A section that provides a brief overview of Ben's experience, education, and skills, including their work experience as a web developer, machine learning engineer, and COO.
-
   return (
-    <div
-      className="grid grid-cols-1 lg:grid-cols-4 rounded-br-full min-h-screen bg-neutral-200 place-content-center p-4"
+    <section
       id="about"
+      className="relative scroll-mt-20 border-t border-white/[0.04] bg-slate-900/30 py-20 sm:py-28"
+      aria-labelledby="about-heading"
     >
-      <div></div>
-      <div className="opacity-90 lg:col-span-2 shadow-2xl h-fit flex justify-start px-4 py-4 md:px-12 text-secondary-content bg-neutral-100  rounded-md">
-        <div>
-          <br />
-          <h4 className="text-2xl prose-2xl">
-            Ben Flanders is a software engineer based out of Atlanta with a
-            passion for artificial intelligence and building scalable
-            businesses.
-          </h4>
-          <br />
-          <h4 className="text-md prose-md">
-            Ben is currently wearing many hats at his animation technology
-            startup, Artimatic Technologies, Inc. He was previously a software
-            developer for the US National Parks System south east coast network
-            in Athens, GA.
-          </h4>
-          <br />
-          <h4 className="text-md prose-md">
-            Ben graduated from the University of Georgia in 2019 with a B.S. in
-            Computer Science and a B.A. in Cognitive Science. He graduated from
-            UGA again in 2021, with a M.S. in Artificial Intelligence. Go Dawgs!
-          </h4>
-          <br />
-          <h4 className="text-md prose-md">
-            While pursuing his Masters of Artificial Intelligence, Ben worked
-            with the US National Parks System to create datbase applications for
-            the Wildlife and Water Quality SECN teams.
-          </h4>
-          <br />
-          <h4 className="text-md prose-md">
-            Ben is a seasoned coder with extensive experience in both software
-            development and business operations. While working in the software
-            industry, he discovered a passion for not only programming and
-            project architecture but also project planning and translating
-            business ideas into tangible products. These interests drove him to
-            co-found a startup during his {"master's"} degree with one of his
-            professors and two other students. He looks forward to collaborating
-            with other like-minded individuals and continuing to explore his
-            passion for software development and business innovation.
-          </h4>
-          <br />
-          <h4 className="text-md prose-md">
-            Ben is an expert in Python, Typescript, SQL, and multiple Amazon Web
-            Services
-          </h4>
-          <br />
-          <h4>
-            Outside of work, Ben loves to cheer on the Dawgs and explore the
-            world with his dogs.
-          </h4>
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-cyan-950/10 to-transparent" />
+      <div className="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <p className="font-mono text-xs font-medium uppercase tracking-widest text-cyan-400/80">
+          About
+        </p>
+        <h2
+          id="about-heading"
+          className="mt-2 font-display text-3xl font-semibold tracking-tight text-slate-100 sm:text-4xl"
+        >
+          Background
+        </h2>
+
+        <div className="mt-10 space-y-8 text-base leading-relaxed text-slate-400 sm:text-lg">
+          <p className="text-lg font-medium text-slate-200 sm:text-xl">
+            Ben is an Atlanta-based engineer focused on{" "}
+            <strong className="font-medium text-slate-100">
+              production AI agents
+            </strong>
+            ,{" "}
+            <strong className="font-medium text-slate-100">
+              multi-agent chat
+            </strong>
+            , and{" "}
+            <strong className="font-medium text-slate-100">
+              low-latency conversational quality
+            </strong>
+            — shipping systems that stay sharp when users move fast.
+          </p>
+
+          <p>
+            He is an{" "}
+            <strong className="font-medium text-slate-200">
+              AI Agent Developer at ADP
+            </strong>{" "}
+            (full-time, since September 2025), building multi-agent chat and
+            production agent systems with a bias toward{" "}
+            <strong className="font-medium text-slate-200">
+              low-latency, high-quality realtime UX
+            </strong>
+            . He also held an engineering role at{" "}
+            <strong className="font-medium text-slate-200">StreamIt</strong>{" "}
+            with closely related goals:{" "}
+            <strong className="font-medium text-slate-200">
+              realtime chat agents
+            </strong>
+            , responsiveness, and keeping answers strong under rapid
+            back-and-forth.
+          </p>
+
+          <p>
+            He co-founded{" "}
+            <strong className="font-medium text-slate-200">
+              Artimatic Technologies, Inc.
+            </strong>{" "}
+            and is{" "}
+            <strong className="font-medium text-slate-200">
+              no longer in an operating role there
+            </strong>
+            . Earlier, he was a software developer for the{" "}
+            <strong className="font-medium text-slate-200">
+              U.S. National Park Service
+            </strong>{" "}
+            South East Coast Network in Athens, GA. Details on Artimatic
+            products, freelance work, and NPS data tooling live in the{" "}
+            <strong className="font-medium text-slate-200">Work</strong> section
+            above.
+          </p>
+
+          <p>
+            Ben earned a{" "}
+            <strong className="font-medium text-slate-200">
+              B.S. in Computer Science
+            </strong>{" "}
+            and a{" "}
+            <strong className="font-medium text-slate-200">
+              B.A. in Cognitive Science
+            </strong>{" "}
+            from the University of Georgia in 2019, and an{" "}
+            <strong className="font-medium text-slate-200">
+              M.S. in Artificial Intelligence
+            </strong>{" "}
+            from UGA in 2021. During the M.S., he built database applications for
+            NPS Wildlife and Water Quality SECN teams. He is a UGA fan—Go Dawgs.
+            Off the clock, he enjoys exploring with his dogs.
+          </p>
+
+          <p>
+            He cares about architecture, planning, and turning ideas into shipped
+            software. Deep strengths include{" "}
+            <strong className="font-medium text-slate-200">Python</strong>,{" "}
+            <strong className="font-medium text-slate-200">SQL</strong>,{" "}
+            <strong className="font-medium text-slate-200">AWS</strong>, and
+            agent stacks (Strands, LangChain), alongside the web and API layers
+            that surround them.
+          </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

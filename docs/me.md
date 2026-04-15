@@ -23,7 +23,7 @@
 - Machine Learning Engineer
 - Web Developer
 - Entrepreneur
-- Co-Founder of Artimatic Technologies, Inc.
+- Former Co-Founder, Artimatic Technologies, Inc. (not currently employed there)
 - Freelance Software Developer (via Wayfinder Data Solutions, LLC)
 
 ---
@@ -36,7 +36,7 @@
 | B.A. | Cognitive Science | University of Georgia (UGA) | 2019 |
 | M.S. | Artificial Intelligence | University of Georgia (UGA) | 2021 |
 
-- **Thesis:** "Automated Bird Audio Classification using Machine Learning" — worked with the US National Parks System; supported by UGA School of AI.
+- **Thesis:** "Automated Bird Audio Classification using Machine Learning" — worked with the U.S. National Park Service; supported by UGA School of AI.
 - Thesis PDF: https://www.ai.uga.edu/sites/default/files/inline-files/theses/flanders_benjamin_202105_ms.pdf
 
 ---
@@ -46,18 +46,20 @@
 ### ADP — AI Agent Developer (Full-time)
 - **Dates:** September 2025 – Present
 - **Location:** Alpharetta, Georgia (Hybrid)
-- Built AI agents serving complex, dedicated tasks requiring multi-agent collaboration, including multi-agent chat systems.
+- Builds AI agents for complex, dedicated tasks with **multi-agent collaboration**, including **realtime multi-agent chat** experiences.
+- Emphasis in recent work on **low-latency**, **high-quality** assistant behavior, and dependable behavior **under rapid user interaction** (quality at speed in conversational settings).
 - Architected and implemented agentic systems using Strands (AI) and LangChain (Python).
-- Collaborated closely with Java developers on cross-functional teams.
-- Presented key development milestones to stakeholders across the organization segment.
-- Prompt engineering and context engineering for production agent systems.
+- Collaborates with Java developers on cross-functional teams; presents milestones to stakeholders; prompt engineering and context engineering for production agent systems.
 - Tech: Python, AWS SQS, AWS S3, Strands (AI), LangChain (Python), Docker, Git, Jira.
 
-### Artimatic Technologies, Inc. — Co-Founder
-- Animation technology startup.
+### StreamIt — Engineering (realtime conversational AI)
+- Engineering work centered on **realtime chat agents** and conversational surfaces, with a focus on **latency-sensitive UX** and **maintaining quality at speed** as usage scales.
+
+### Artimatic Technologies, Inc. — Co-Founder (past)
+- Ben **does not currently work at Artimatic** in an ongoing operating role; he co-founded the animation-technology startup and contributed to the following products and IP.
 - **SkiNNer:** Developed and trained the neural network powering SkiNNer, an automated weight painting solution for Autodesk Maya. Contributed to a published paper. Tech: Python, TensorFlow, Keras, AWS (SageMaker, EC2, S3), Docker.
 - **Artimatic API:** Lead developer; designed and built the RESTful API serving as the backbone for all Artimatic product deliveries. Tech: Python, Django REST Framework, AWS.
-- **Artimatic Web App:** Co-developed the web app — interfaces with the API, handles Stripe payment processing, provides skiNNer installation, and hosts geNNie (AI-powered texture generator). Tech: TypeScript, JavaScript, React, AWS (Amplify, S3, EC2, and more).
+- **Artimatic Web App:** Co-developed the web app — interfaces with the API, handles Stripe payment processing, provides SkiNNer installation, and hosts geNNie (AI-powered texture generator). Tech: JavaScript, TypeScript, React, AWS (Amplify, S3, EC2, and more).
 - **Patent:** "Automated weighting generation for three-dimensional models" — a novel process that creates/adjusts model weighting matrices, applies a machine learning model, and generates accurate output weightings. Patent link: https://patents.justia.com/inventor/benjamin-robert-flanders
 - **SkiNNer Paper:** Published 2021 (paper not yet on publisher's site as of last update).
 - Company website: https://www.artimatic.io/
@@ -65,10 +67,10 @@
 ### Wayfinder Data Solutions, LLC — Freelance Software Developer
 - Freelance projects for diverse clients.
 - Notable project: internal construction project planner and data tracker featuring real-time reporting, camera integrations, and SCRUM for project management.
-- Tech: TypeScript, JavaScript, Next.js, AWS (S3, EC2, Amplify).
+- Tech: JavaScript, TypeScript, Next.js, AWS (S3, EC2, Amplify).
 - Company website: http://wayfinderdata.com/
 
-### US National Parks System (South East Coast Network) — Database Technician
+### U.S. National Park Service (South East Coast Network) — Database Technician
 - Located in Athens, GA.
 - **Estuarine Water Quality Database & Data App:** Designed database schemas, built applications for scientists to interface with water quality databases, and co-authored standard operating procedures.
 - **Wildlife Database & Data App:** Created database applications for the Wildlife and Water Quality SECN teams during M.S. studies.
@@ -120,7 +122,7 @@
 ## Personal
 
 - UGA fan ("Go Dawgs!")
-- Loves cheering on the Dawgs and exploring the world with his dogs.
+- Enjoys cheering on the Dawgs and exploring with his dogs.
 - Co-founded Artimatic during his master's degree with one of his professors and two other students.
 - Passionate about project planning and translating business ideas into tangible products.
 

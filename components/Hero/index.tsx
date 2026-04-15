@@ -1,59 +1,66 @@
 import Image from "next/image";
-import Link from "next/link";
 import heroImage from "../../public/hero_banner.png";
 import DownloadResumeButton from "./downloadResumeButton";
 
-type HeroProps = {
-  learnMoreHref: string;
-  aboutHref: string;
-};
-
-export default function Hero({ learnMoreHref, aboutHref }: HeroProps) {
-  // A full-screen header with a hero image showcasing the developer's skills, highlighting their expertise in web development, machine learning, and being a CTO. A call-to-action to view their portfolio or learn more about them.
-
+export default function Hero() {
   return (
-    <div className="relative flex flex-col h-screen max-w-screen max-h-screen">
-      <div className="relative h-screen w-screen bg-base-300 max-w-screen max-h-screen">
-        <div className="w-full h-full items-start max-h-screen max-w-full">
-          <Image
-            alt="Abstract background art. Colors are primarily blue, dark gray, and white."
-            src={heroImage}
-            fill={true}
-            className="rounded-br-2xl object-cover object-center"
-          />
-        </div>
+    <div className="relative flex min-h-[100dvh] flex-col">
+      <div className="absolute inset-0">
+        <Image
+          alt="Abstract background art. Colors are primarily blue, dark gray, and white."
+          src={heroImage}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-slate-950/40 via-slate-950/75 to-slate-950"
+          aria-hidden
+        />
+        <div className="absolute inset-0 bg-hero-vignette" aria-hidden />
       </div>
-      <div className="absolute h-full flex-col flex w-full prose-lg md:prose-2xl p-4 sm:p-0">
-        <div className="flex-1 flex-row self-center w-full"></div>
-        <div className="flex flex-1 flex-col px-2 sm:px-16 py-4 text-base-content w-full items-start pl-0 lg:pl-4 xl:pl-16 2xl:pl-32">
-          <div className="bg-base-100 flex flex-col w-full h-full px-2 sm:pl-8 pt-16 bg-opacity-75 rounded-3xl max-w-screen md:max-w-screen-md">
-            <div className="pl-4">
-              <h1 className="text-primary-content">Ben Flanders</h1>
-              <h3 className="text-primary-content">
-                Machine Learning Engineer, Web Developer, Entrepreneur
-              </h3>
-              <h3 className="text-primary-content">Benrflanders@gmail.com</h3>
+
+      <div className="relative flex flex-1 flex-col justify-end px-4 pb-16 pt-24 sm:justify-center sm:px-8 sm:pb-20 sm:pt-28 lg:px-12">
+        <div className="mx-auto w-full max-w-3xl">
+          <div className="rounded-3xl border border-white/10 bg-slate-950/55 p-8 shadow-2xl shadow-black/40 backdrop-blur-xl sm:p-10 md:p-12">
+            <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-cyan-400/90">
+              Atlanta, GA
+            </p>
+            <h1 className="mt-3 font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-6xl">
+              Ben Flanders
+            </h1>
+            <p className="mt-4 max-w-xl text-lg text-slate-300 sm:text-xl">
+              Machine learning engineer and product-minded builder — AI agents,
+              realtime multi-agent chat, and low-latency systems that stay sharp
+              under load.
+            </p>
+            <a
+              href="mailto:Benrflanders@gmail.com"
+              className="mt-2 inline-block text-sm font-medium text-cyan-300/90 underline-offset-4 hover:text-cyan-200 hover:underline"
+            >
+              Benrflanders@gmail.com
+            </a>
+
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+              <a
+                href="#portfolio"
+                className="btn-primary w-full justify-center sm:w-auto sm:min-w-[200px]"
+              >
+                View Work
+              </a>
+              <a
+                href="#about"
+                className="btn-secondary w-full justify-center sm:w-auto sm:min-w-[200px]"
+              >
+                About
+              </a>
             </div>
-            <div className="flex flex-1 flex-col items-center justify-center space-y-4 pl-0 md:pl-64 sm:pt-16 p-0 sm:p-16 pb-4 scroll-smooth">
-              <Link
-                href={learnMoreHref}
-                className="btn btn-circle btn-primary w-full max-w-xs md:max-w-md flex flex-col items-center justify-center"
-                scroll={false}
-              >
-                Things Ben has built
-              </Link>
-              <Link
-                href={aboutHref}
-                className="btn btn-circle btn-primary w-full max-w-xs md:max-w-md flex flex-col items-center justify-center"
-                scroll={false}
-              >
-                Learn More About Ben
-              </Link>
+            <div className="mt-4 flex justify-stretch sm:justify-start">
               <DownloadResumeButton />
             </div>
           </div>
         </div>
-        <div className="flex-1 flex-row self-center w-full"></div>
       </div>
     </div>
   );

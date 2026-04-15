@@ -2,6 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
+@layer base {
+  html {
     scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  ::selection {
+    @apply bg-cyan-500/30 text-white;
+  }
+
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-cyan-400/80;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-br from-cyan-400 to-teal-500 px-5 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 transition hover:from-cyan-300 hover:to-teal-400 hover:shadow-cyan-500/30 active:scale-[0.98] motion-reduce:active:scale-100;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-slate-100 backdrop-blur-sm transition hover:border-cyan-400/40 hover:bg-white/10 active:scale-[0.98] motion-reduce:active:scale-100;
+  }
+
+  .btn-ghost-icon {
+    @apply inline-flex h-11 w-11 items-center justify-center rounded-lg text-slate-400 transition hover:bg-white/10 hover:text-cyan-300;
+  }
+
+  .section-quote {
+    @apply relative mx-auto max-w-3xl px-6 py-12 text-center font-display text-lg font-light italic leading-relaxed tracking-wide text-slate-400 md:text-xl;
+  }
+
+  .section-quote::before {
+    content: "";
+    @apply absolute left-1/2 top-0 h-px w-24 -translate-x-1/2 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent;
+  }
 }

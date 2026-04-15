@@ -2,7 +2,7 @@
 
 Personal portfolio website for **Ben Flanders** — hosted at **[benflanders.me](https://benflanders.me)**.
 
-Built with [Next.js](https://nextjs.org/) 14 (App Router, static export), [Tailwind CSS](https://tailwindcss.com/), and [DaisyUI](https://daisyui.com/). Deployed to GitHub Pages.
+Built with [Next.js](https://nextjs.org/) 14 (App Router, static export), [Tailwind CSS](https://tailwindcss.com/), and [`@tailwindcss/typography`](https://tailwindcss.com/docs/typography-plugin). Deployed to GitHub Pages.
 
 ## Documentation
 
@@ -18,7 +18,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see the site.
+Open the URL printed in the terminal (by default [http://localhost:3000](http://localhost:3000)). If something else is already using port 3000, Next.js will use the next free port (for example 3001) and show that URL instead.
 
 ## Build & Export
 

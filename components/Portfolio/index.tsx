@@ -1,351 +1,171 @@
-import Image from "next/image";
-import Link from "next/link";
+import PortfolioCard, { ArtimaticLogo } from "./PortfolioCard";
 
 export default function Portfolio() {
-  // A showcase of their previous projects, including web development projects and machine learning projects. Each project should have a brief description, technology stack used, and a screenshot or demo link.
-  // Portfolio: Artimatic, Wayfinder, and Thesis? -- each should have clear
-  // data about the tech stack and any other info that is relevant to what I
-  // actually coded... maybe tell a story?
-
   return (
-    <div id="portfolio">
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 w-full content-center justify-center bg-neutral-200 py-4">
-        <div className="card max-w-lg bg-base-100 shadow-xl justify-center justify-self-center">
-          <div className="card-body">
-            <div className="flex flex-row">
-              <h1 className="card-title flex flex-3">SkiNNer</h1>
-              <figure className="flex flex-2">
-                <Image
-                  src="/artimatic.png"
-                  alt="Artimatic Logo"
-                  height={165 / 2}
-                  width={512 / 2}
-                />
-              </figure>
-            </div>
-            <h2>Co-Founder of Artimatic Technologies, Inc.</h2>
+    <section
+      id="portfolio"
+      className="relative scroll-mt-20 border-t border-white/[0.04] bg-slate-950 bg-grid-fade bg-grid-size py-16 sm:py-24"
+      aria-labelledby="portfolio-heading"
+    >
+      <div className="pointer-events-none absolute inset-0 bg-hero-vignette" aria-hidden />
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-12 max-w-2xl">
+          <p className="font-mono text-xs font-medium uppercase tracking-widest text-cyan-400/80">
+            Selected Work
+          </p>
+          <h2
+            id="portfolio-heading"
+            className="mt-2 font-display text-3xl font-semibold tracking-tight text-slate-100 sm:text-4xl"
+          >
+            Things Ben Has Built
+          </h2>
+          <p className="mt-3 text-slate-400">
+            Agents, platforms, and research spanning ML, APIs, and the web.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 justify-items-center gap-6 md:grid-cols-2 md:justify-items-stretch xl:grid-cols-3">
+          <PortfolioCard
+            title="ADP Multi-Agent System"
+            subtitle="AI Agent Developer · ADP"
+            tech={[
+              "Python",
+              "Strands (AI)",
+              "LangChain",
+              "AWS (SQS, S3)",
+              "Docker",
+            ]}
+            href="https://www.adp.com"
+            cta="Visit ADP"
+          >
             <p>
-              {" "}
+              Multi-agent chat and orchestration for complex workflows, with a
+              focus on responsive realtime UX and dependable quality under
+              low-latency pressure.
+            </p>
+            <p>
+              Agent architecture, prompt and context engineering, and production
+              hardening alongside cross-functional partners.
+            </p>
+          </PortfolioCard>
+
+          <PortfolioCard
+            title="SkiNNer"
+            subtitle="Former Co-Founder · Artimatic Technologies, Inc."
+            tech={["Python", "TensorFlow & Keras", "AWS (SageMaker, EC2, S3)", "Docker"]}
+            href="https://www.artimatic.io/"
+            cta="Visit Artimatic"
+            logo={<ArtimaticLogo />}
+          >
+            <p>
               Developed and trained the neural network that powers SkiNNer, an
               automated weight painting solution for Autodesk Maya.
             </p>
             <p>
-              Artimatic{"'"}s innovative approach significantly reduces the time
-              and effort required for weight painting. Ben also contributed to a
-              published paper detailing the technical aspects of the project.
-              This experience gave me the opportunity to apply my technical
-              skills and creativity to solve complex problems and present my
-              work to a broader audience.
+              Artimatic&apos;s approach significantly reduces time and effort for
+              weight painting. Ben contributed to a published paper on the
+              technical work.
             </p>
-            <div className="mockup-code">
-              <pre>
-                <code>Python</code>
-              </pre>
-              <pre>
-                <code>Tensorflow && Keras</code>
-              </pre>
-              <pre>
-                <code>AWS (SageMaker, EC2, & S3)</code>
-              </pre>
-              <pre>
-                <code>Docker</code>
-              </pre>
-            </div>
+          </PortfolioCard>
 
-            <div className="card-actions justify-end">
-              <a
-                href="https://www.artimatic.io/"
-                className="btn btn-primary"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Check out Artimatic
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="card max-w-lg bg-base-100 shadow-xl justify-center justify-self-center">
-          <div className="card-body">
-            <div className="flex flex-row">
-              <h1 className="card-title flex flex-3">Artimatic API</h1>
-              <figure className="flex flex-2">
-                <Image
-                  src="/artimatic.png"
-                  alt="Artimatic Logo"
-                  height={165 / 2}
-                  width={512 / 2}
-                />
-              </figure>
-            </div>
-            <h2>Co-Founder of Artimatic Technologies, Inc.</h2>
+          <PortfolioCard
+            title="Artimatic API"
+            subtitle="Former Co-Founder · Artimatic Technologies, Inc."
+            tech={["Python", "Django REST Framework", "AWS"]}
+            href="https://www.artimatic.io/"
+            cta="Visit Artimatic"
+            logo={<ArtimaticLogo />}
+          >
             <p>
-              As lead developer at Artimatic, Ben designed and developed the API
-              that serves as the backbone of all Artimatic product deliveries.
+              As lead developer, Ben designed and built the API that backs all
+              Artimatic product deliveries.
             </p>
             <p>
-              Ben leveraged his expertise in RESTful API design and database
-              development to create a highly scalable and reliable
-              infrastructure. Thanks to his contributions, {"Artimatic's"}{" "}
-              products are known for their seamless integration and ease of use.
-              In addition, Ben has continued to improve the API to ensure that
-              it meets the evolving needs of Artimatic customers.
+              RESTful design, solid database work, and ongoing improvements for
+              customer needs.
             </p>
-            <div className="mockup-code">
-              <pre>
-                <code>Python</code>
-              </pre>
-              <pre>
-                <code>Django REST Framework</code>
-              </pre>
-              <pre>
-                <code>AWS</code>
-              </pre>
-            </div>
+          </PortfolioCard>
 
-            <div className="card-actions justify-end">
-              <a
-                href="https://www.artimatic.io/"
-                className="btn btn-primary"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Check out Artimatic
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="card max-w-lg bg-base-100 shadow-xl justify-center justify-self-center">
-          <div className="card-body">
-            <div className="flex flex-row">
-              <h1 className="card-title flex flex-3">Artimatic Web App</h1>
-              <figure className="flex flex-2">
-                <Image
-                  src="/artimatic.png"
-                  alt="Artimatic Logo"
-                  height={165 / 2}
-                  width={512 / 2}
-                />
-              </figure>
-            </div>
-            <h2>Co-Founder of Artimatic Technologies, Inc.</h2>
+          <PortfolioCard
+            title="Artimatic Web App"
+            subtitle="Former Co-Founder · Artimatic Technologies, Inc."
+            tech={["React", "JavaScript", "AWS (Amplify, S3, EC2, …)"]}
+            href="https://www.artimatic.io/"
+            cta="Visit Artimatic"
+            logo={<ArtimaticLogo />}
+          >
             <p>
-              Co-developed and continues to improve the Artimatic web app, a
-              crucial component of Artimatic{"'"}s suite of tools.
-            </p>{" "}
-            <p>
-              It serves as an interface for the API, facilitates payment
-              processing through Stripe, and provides a streamlined installation
-              process for skiNNer. Additionally, the app is used to interact
-              with geNNie, an AI powered texture generator for animators and
-              artists.
+              Co-developed the customer-facing app: API UI, Stripe payments,
+              SkiNNer install flow, and geNNie (AI texture tooling).
             </p>
-            <div className="mockup-code">
-              <pre>
-                <code>Typescript && Javascript</code>
-              </pre>
-              <pre>
-                <code>React</code>
-              </pre>
-              <pre>
-                <code>AWS (Amplify, S3, EC2, and more)</code>
-              </pre>
-            </div>
-            <div className="card-actions justify-end">
-              <a
-                href="https://www.artimatic.io/"
-                className="btn btn-primary"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Check out Artimatic
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="card max-w-lg bg-base-100 shadow-xl justify-center justify-self-center">
-          <div className="card-body">
-            <h1 className="card-title">Freelance Projects</h1>
-            <h2>Freelance Software Developer</h2>
+          </PortfolioCard>
+
+          <PortfolioCard
+            title="Freelance Projects"
+            subtitle="Freelance Software Developer"
+            tech={["JavaScript", "Next.js", "AWS (S3, EC2, Amplify)"]}
+            href="http://wayfinderdata.com/"
+            cta="Wayfinder Data Solutions"
+          >
             <p>
-              As a freelance developer, Ben undertakes diverse client projects.
-              Check out Wayfinder Data Solutions, LLC for more information about
-              these projects.
+              Diverse client work via Wayfinder Data Solutions, LLC — including
+              an internal construction planner and data tracker with real-time
+              reporting, camera integrations, and Scrum-style delivery.
             </p>
+          </PortfolioCard>
+
+          <PortfolioCard
+            title="M.S. AI Thesis: Bird Audio Classification"
+            subtitle="M.S. Artificial Intelligence · UGA"
+            tech={["NumPy", "Scikit-Learn", "SciPy (signals)"]}
+            href="https://www.ai.uga.edu/sites/default/files/inline-files/theses/flanders_benjamin_202105_ms.pdf"
+            cta="Read Thesis (PDF)"
+          >
             <p>
-              One of these projects involved the development of an internal
-              construction project planner and data tracker. The project
-              comprised real-time reporting, camera integrations, and SCRUM for
-              project management.
+              Worked with the National Park Service on automated bird song
+              classification — bird populations as habitat health indicators.
             </p>
-            <div className="mockup-code">
-              <pre>
-                <code>Typescript && Javascript</code>
-              </pre>
-              <pre>
-                <code>NextJS</code>
-              </pre>
-              <pre>
-                <code>AWS (S3, EC2, & Amplify)</code>
-              </pre>
-            </div>
-            <div className="card-actions justify-end">
-              <div className="card-actions justify-end">
-                <a
-                  href="http://wayfinderdata.com/"
-                  className="btn btn-primary"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Check out Wayfinder
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="card max-w-lg bg-base-100 shadow-xl justify-center justify-self-center">
-          <div className="card-body">
-            <h1 className="card-title">
-              MS AI Thesis: Automated Bird Audio Classification using Machine
-              Learning
-            </h1>
-            <h2>Student at UGA, Masters of Artificial Intelligence</h2>
+          </PortfolioCard>
+
+          <PortfolioCard
+            title="NPS SECN — Estuarine Water Quality"
+            subtitle="Database Technician · U.S. National Park Service"
+            tech={["Transact-SQL", "Visual Basic"]}
+            href="https://www.nps.gov/articles/secn-august19-newsletter.htm"
+            cta="SECN Newsletter"
+          >
             <p>
-              While pursuing his Masters of Artificial Intelligence, Ben worked
-              with the National Parks System to create a system for automated
-              bird song classification.
+              Schema design, apps for scientists, and SOPs for data workflows and
+              field procedures.
             </p>
+          </PortfolioCard>
+
+          <PortfolioCard
+            title="NPS SECN — Wildlife Data"
+            subtitle="Database Technician · U.S. National Park Service"
+            tech={["Transact-SQL", "Visual Basic"]}
+            href="https://www.nps.gov/articles/secn-august19-newsletter.htm"
+            cta="SECN Newsletter"
+          >
             <p>
-              In case you {"didn't"} know, Bird populations are a great
-              indicator of habitat health.
+              Database applications for Wildlife and Water Quality SECN teams
+              during M.S. studies.
             </p>
-            <div className="mockup-code">
-              <pre>
-                <code>Numpy</code>
-              </pre>
-              <pre>
-                <code>Scikit-Learn</code>
-              </pre>
-              <pre>
-                <code>Scipy (for Signal Processing)</code>
-              </pre>
-            </div>
-            <div className="card-actions justify-end">
-              <a
-                href="https://www.ai.uga.edu/sites/default/files/inline-files/theses/flanders_benjamin_202105_ms.pdf"
-                className="btn btn-primary"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Read {"Ben's"} Thesis
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="card max-w-lg bg-base-100 shadow-xl justify-center justify-self-center">
-          <div className="card-body">
-            <h1 className="card-title">
-              NPS SECN Estuarine Water Quality Database & Data App
-            </h1>
-            <h2>NPS Database Technician</h2>
+          </PortfolioCard>
+
+          <PortfolioCard
+            title="This Portfolio Site"
+            subtitle="Open Source"
+            tech={["Next.js", "Tailwind CSS", "TypeScript"]}
+            href="https://github.com/Benrflanders/Benrflanders.github.io"
+            cta="View on GitHub"
+          >
             <p>
-              Ben designed database schemas and implemented, then developed
-              applications for scientists to interface with these databases.
+              This site is open source — layout, content, and deploy pipeline
+              live in the repo.
             </p>
-            <p>
-              Ben helped author standard operating procedures dictating
-              operations while using the data-applications as well as scientist
-              procedures relating to the proejct as a whole.
-            </p>
-            <div className="mockup-code">
-              <pre>
-                <code>Transact-SQL</code>
-              </pre>
-              <pre>
-                <code>Visual Basic</code>
-              </pre>
-            </div>
-            <div className="card-actions justify-end">
-              <a
-                href="https://www.nps.gov/articles/secn-august19-newsletter.htm"
-                className="btn btn-primary"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                South East Coast Network NPS
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="card max-w-lg bg-base-100 shadow-xl justify-center justify-self-center">
-          <div className="card-body">
-            <h1 className="card-title">
-              NPS SECN Wildlife Database & Data App
-            </h1>
-            <h2>NPS Database Technician</h2>
-            <p>
-              While pursuing his Masters of Artificial Intelligence, Ben worked
-              with the US National Parks System to create datbase applications
-              for the Wildlife and Water Quality SECN teams.
-            </p>
-            <p>
-              Ben designed database schemas and implemented, then developed
-              applications for scientists to interface with these databases.
-            </p>
-            <div className="mockup-code">
-              <pre>
-                <code>Transact-SQL</code>
-              </pre>
-              <pre>
-                <code>Visual Basic</code>
-              </pre>
-            </div>
-            <div className="card-actions justify-end">
-              <a
-                href="https://www.nps.gov/articles/secn-august19-newsletter.htm"
-                className="btn btn-primary"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                South East Coast Network NPS
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="card max-w-lg bg-base-100 shadow-xl justify-center justify-self-center">
-          <div className="card-body">
-            <h1 className="card-title">Portfolio Website</h1>
-            <h2>Open-Source Developer</h2>
-            <p>
-              Want to learn how this site was made? Luckily for you, Ben made it
-              completely open source.
-            </p>
-            <div className="mockup-code">
-              <pre>
-                <code>NextJS</code>
-              </pre>
-              <pre>
-                <code>Typescript</code>
-              </pre>
-              <pre>
-                <code>Figma</code>
-              </pre>
-              <pre>
-                <code>Github</code>
-              </pre>
-            </div>
-            <div className="card-actions justify-end">
-              <a
-                href=""
-                className="btn btn-primary"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                Github
-              </a>
-            </div>
-          </div>
+          </PortfolioCard>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
