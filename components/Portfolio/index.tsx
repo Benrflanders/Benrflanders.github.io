@@ -38,13 +38,14 @@ export default function Portfolio() {
             cta="Visit ADP"
           >
             <p>
-              Multi-agent chat and orchestration for complex workflows, with a
-              focus on responsive realtime UX and dependable quality under
-              low-latency pressure.
+              Built multi-stage, multi-agent pipelines for complex workflow
+              routing, tool orchestration, and cross-system data exchange across
+              enterprise integrations.
             </p>
             <p>
-              Agent architecture, prompt and context engineering, and production
-              hardening alongside cross-functional partners.
+              Contributed to agent architecture and design, owned prompt and
+              context engineering deliverables, and presented progress on shipped
+              improvements that increased reliability across decision stages.
             </p>
           </PortfolioCard>
 

@@ -46,8 +46,8 @@
 ### ADP — AI Agent Developer (Full-time)
 - **Dates:** September 2025 – Present
 - **Location:** Alpharetta, Georgia (Hybrid)
-- Builds AI agents for complex, dedicated tasks with **multi-agent collaboration**, including **realtime multi-agent chat** experiences.
-- Emphasis in recent work on **low-latency**, **high-quality** assistant behavior, and dependable behavior **under rapid user interaction** (quality at speed in conversational settings).
+- Builds AI agents for complex, dedicated tasks with **multi-agent collaboration** and **multi-stage pipeline orchestration**.
+- Primary focus on handling complex routing, tool and data handoffs, and multi-system coordination; realtime chat was one part of the work, but not the majority.
 - Architected and implemented agentic systems using Strands (AI) and LangChain (Python).
 - Collaborates with Java developers on cross-functional teams; presents milestones to stakeholders; prompt engineering and context engineering for production agent systems.
 - Tech: Python, AWS SQS, AWS S3, Strands (AI), LangChain (Python), Docker, Git, Jira.

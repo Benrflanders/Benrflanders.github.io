@@ -32,7 +32,7 @@ export default function Hero() {
             </h1>
             <p className="mt-4 max-w-xl text-lg text-slate-300 sm:text-xl">
               Machine learning engineer and product-minded builder — AI agents,
-              realtime multi-agent chat, and low-latency systems that stay sharp
+              multi-stage pipelines, and low-latency systems that stay sharp
               under load.
             </p>
             <a

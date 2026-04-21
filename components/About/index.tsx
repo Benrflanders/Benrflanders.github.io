@@ -25,13 +25,9 @@ export default function About() {
             </strong>
             ,{" "}
             <strong className="font-medium text-slate-100">
-              multi-agent chat
+              multi-stage multi-agent pipelines
             </strong>
-            , and{" "}
-            <strong className="font-medium text-slate-100">
-              low-latency conversational quality
-            </strong>
-            — shipping systems that stay sharp when users move fast.
+            , and reliable orchestration across complex systems and data flows.
           </p>
 
           <p>
@@ -39,38 +35,31 @@ export default function About() {
             <strong className="font-medium text-slate-200">
               AI Agent Developer at ADP
             </strong>{" "}
-            (full-time, since September 2025), building multi-agent chat and
-            production agent systems with a bias toward{" "}
-            <strong className="font-medium text-slate-200">
-              low-latency, high-quality realtime UX
-            </strong>
-            . He also held an engineering role at{" "}
-            <strong className="font-medium text-slate-200">StreamIt</strong>{" "}
-            with closely related goals:{" "}
-            <strong className="font-medium text-slate-200">
-              realtime chat agents
-            </strong>
-            , responsiveness, and keeping answers strong under rapid
-            back-and-forth.
+            (full-time, since September 2025), where most of his work centers on
+            designing and shipping multi-stage, multi-agent pipelines for complex
+            routing, tool use, and cross-system data handoffs, with chat as one
+            component inside a broader orchestration platform.
           </p>
 
           <p>
-            He co-founded{" "}
+            He{" "}
             <strong className="font-medium text-slate-200">
-              Artimatic Technologies, Inc.
+              co-founded Artimatic Technologies, Inc.
             </strong>{" "}
-            and is{" "}
-            <strong className="font-medium text-slate-200">
-              no longer in an operating role there
-            </strong>
-            . Earlier, he was a software developer for the{" "}
+            , an AI animation software company, and is no longer in an operating
+            role there. Earlier, he was a software developer for the{" "}
             <strong className="font-medium text-slate-200">
               U.S. National Park Service
             </strong>{" "}
             South East Coast Network in Athens, GA. Details on Artimatic
             products, freelance work, and NPS data tooling live in the{" "}
-            <strong className="font-medium text-slate-200">Work</strong> section
-            above.
+            <a
+              href="#portfolio"
+              className="font-medium text-slate-200 underline decoration-cyan-500/40 underline-offset-4 transition hover:text-cyan-300"
+            >
+              Work
+            </a>{" "}
+            section above.
           </p>
 
           <p>
